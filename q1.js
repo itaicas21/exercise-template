@@ -3,9 +3,12 @@ function run() {
     const output = document.getElementById("output");
     let out = "";
 /**/
-    // write your code here
-    // out = input + 5;
-
+    function isArray(arr) {
+        if ( (arr[0] === '[') && (arr[arr.length - 1] === ']') ) {
+            return true;
+        } else return false;
+    }
+    out = isArray(input);
 /**/
     output.innerText = out;
 }
